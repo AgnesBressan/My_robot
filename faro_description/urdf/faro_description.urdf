@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="faro_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0087343 1.6068E-05 -0.0017529"
+        rpy="0 0 0" />
+      <mass
+        value="0.45115" />
+      <inertia
+        ixx="0.00074161"
+        ixy="-1.5171E-07"
+        ixz="1.6466E-06"
+        iyy="0.0014721"
+        iyz="9.1756E-09"
+        izz="0.0022027" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.53725 0.34902 0.33725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="bola1_Link">
+    <inertial>
+      <origin
+        xyz="-1.5728E-09 1.9775E-09 0.00047467"
+        rpy="0 0 0" />
+      <mass
+        value="0.050589" />
+      <inertia
+        ixx="2.8263E-05"
+        ixy="1.6684E-12"
+        ixz="5.6717E-13"
+        iyy="2.8263E-05"
+        iyz="-1.6358E-12"
+        izz="4.8345E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/bola1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/bola1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bola1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.053091 -0.098296 0.011373"
+      rpy="1.5708 -1.1528 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bola1_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="bola2_Link">
+    <inertial>
+      <origin
+        xyz="-2.8093E-09 -1.6256E-09 0.00047467"
+        rpy="0 0 0" />
+      <mass
+        value="0.050589" />
+      <inertia
+        ixx="2.8263E-05"
+        ixy="-1.4586E-12"
+        ixz="1.5929E-12"
+        iyy="2.8263E-05"
+        iyz="1.4235E-12"
+        izz="4.8345E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/bola2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/bola2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bola2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.053091 0.098228 0.011373"
+      rpy="1.5708 -0.58968 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="bola2_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="suporte1_Link">
+    <inertial>
+      <origin
+        xyz="-6.9389E-18 0.0063847 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0041821" />
+      <inertia
+        ixx="2.0974E-07"
+        ixy="-2.3394E-23"
+        ixz="-6.6174E-23"
+        iyy="3.8569E-07"
+        iyz="5.4814E-23"
+        izz="2.0974E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/suporte1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/suporte1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="suporte1_joint"
+    type="fixed">
+    <origin
+      xyz="0.068659 -0.00018379 -0.0068594"
+      rpy="-1.5708 0 0.99209" />
+    <parent
+      link="base_link" />
+    <child
+      link="suporte1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bola_Link">
+    <inertial>
+      <origin
+        xyz="6.0811E-05 -0.0025883 0.0012633"
+        rpy="0 0 0" />
+      <mass
+        value="0.010855" />
+      <inertia
+        ixx="2.0829E-07"
+        ixy="-6.6174E-24"
+        ixz="0"
+        iyy="2.0829E-07"
+        iyz="-6.6174E-24"
+        izz="2.0829E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/bola_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/bola_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bola_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.01 0"
+      rpy="0.46756 -0.56834 3.1165" />
+    <parent
+      link="suporte1_Link" />
+    <child
+      link="bola_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="suporte2_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/suporte2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://faro_description/meshes/suporte2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="suporte2_joint"
+    type="fixed">
+    <origin
+      xyz="0.068659 -0.00018379 -0.0068594"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="suporte2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
